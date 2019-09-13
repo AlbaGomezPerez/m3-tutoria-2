@@ -891,6 +891,15 @@
         "iban": "ES15 1202 7216 3116 7175 7522",
         "pin": "1025"
       }
+    },
+    {
+      "name": "Elliot Alderson",
+      "email": "mr-alderson@fsociety.com",
+      "passwords": ["bacillus_putty_collate", "ZYdvvQEwFaTBceeW7LniB", "HinAHxYPcuCnxjUnJpd2N"],
+      "bank": {
+        "iban": "US15 1202 7216 3116 7175 7522",
+        "pin": "1025"
+      }
     }
   ]
 }
