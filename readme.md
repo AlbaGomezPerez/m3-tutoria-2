@@ -1,8 +1,12 @@
-# LOH(): Brecha de seguridad
+![Loh();](assets/img/loh.png)
+
+---
+
+# Brecha de seguridad
 
 Sois miembros de un nuevo grupo de hackers y el pasado fin de semana entrásteis en varios equipos consiguiendo datos sensibles de algunos de los usuarios, entre los cuales se encuentran algunos personajes famosos.
 
-Vuestro grupo, **Legion of Hell**, o "LOH()", ahora necesita publicar los datos para que todo el mundo pueda acceder a ellos y completar así su venganza.
+Vuestro grupo, **Legion of Hell**, o "loh();", ahora necesita publicar los datos para que todo el mundo pueda acceder a ellos y completar así su venganza.
 
 Como hay un poco de prisa os van a facilitar instrucciones para crear, de manera incremental, una web-app donde consultar los datos:
 
@@ -68,7 +72,7 @@ Piden que la aplicación esté hecha con React y que pinte estos datos con estil
 
 ## Fase 2
 
-La **Tech lead** de LOH() os pide ahora que organicemos un poco el proyecto para que no parezcáis un grupo de indio de hacking, que se vea que aquí hay nivel.
+La **Tech lead** de **loh();** os pide ahora que organicéis un poco el proyecto para que no parezca esto un grupo de hacking de cuenca, que se vea que aquí hay nivel.
 
 Debéis usar al menos 5 componentes nuevos:
 
@@ -76,7 +80,7 @@ Debéis usar al menos 5 componentes nuevos:
 1. `Header.js`, que en un futuro contendrá nuestro logo pero nadie está muy seguro de ello porque la gente de programación no encuentra a un diseñador al que chantajear para que haga el logo, por ahora tendrá el título "Legion of Hell".
 1. `DataList.js`, con la lista de datos.
 1. `DataCard`, con la tarjeta de datos de cada usuario hackeado.
-1. `Footer.js`, con el texto "LOH()" y un pequeño reloj con la hora local del usuario, que tirará del estado de su propio componente, no de `App.js`.
+1. `Footer.js`, con el texto "loh();" y un pequeño reloj con la hora local del usuario, que funcionará con su estado propio, independiente del estado del componente `App.js`.
 
 ## Fase 3
 
