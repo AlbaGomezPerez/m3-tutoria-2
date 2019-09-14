@@ -4,13 +4,13 @@ Sois miembros de un nuevo grupo de hackers y el pasado fin de semana entrásteis
 
 Vuestro grupo, **Legion of Hell**, o "LOH()", ahora necesita publicar los datos para que todo el mundo pueda acceder a ellos y completar así su venganza.
 
-Como hay un poco de prisa os van a facilitar instrucciones para crear, de manera incremental, una webapp donde consultar los datos:
+Como hay un poco de prisa os van a facilitar instrucciones para crear, de manera incremental, una web-app donde consultar los datos:
 
 ## Fase 1
 
-Vamos a pintar una primera versión de los datos, sin filtrado ni nada, lo importante es que la información esté fuera.
+Vais a pintar una primera versión de los datos, sin filtrado ni nada, lo importante es que la información esté fuera.
 
-Pero el grupo de back tiene que preparar el siguiente ataque así que nos han proporcionado un mock de los datos finales para que podamos ir avanzado:
+Como el equipo de back tiene que preparar el siguiente ataque os han proporcionado un mock de los datos finales para que podáis ir avanzado:
 
 ```json
 [
@@ -53,29 +53,40 @@ Pero el grupo de back tiene que preparar el siguiente ataque así que nos han pr
 ]
 ```
 
-De cada usuario habéis conseguido: el nombre, el email, las 3 últimas contraseñas, y con esos datos, el IBAN del banco y su PIN para la oficina online.
+De cada usuario habéis conseguido:
 
-Nos piden que la aplicación esté hecha con React y que pinte estos datos con estilo espartano, en el componente `App.js`.
+- nombre
+- email
+- las 3 últimas contraseñas
+
+ y a partir de estos datos:
+
+ - el IBAN del banco
+ - su PIN para la oficina online.
+
+Piden que la aplicación esté hecha con React y que pinte estos datos con estilo espartano, en el componente `App.js`.
 
 ## Fase 2
 
-La **Tech lead** de LOH() os pide ahora que organicemos un poco el proyecto para que no parezcamos un grupo de indio de hacking, que se vea que aquí hay nivel.
+La **Tech lead** de LOH() os pide ahora que organicemos un poco el proyecto para que no parezcáis un grupo de indio de hacking, que se vea que aquí hay nivel.
 
-Nos piden al menos 4 componentes nuevos:
+Debéis usar al menos 5 componentes nuevos:
 
-- `Page.js`, que se cargará desde `App.js` y mostrará nuestra página principal.
-- `Header.js`, que en un futuro contendrá nuestro logo pero nadie está muy seguro de ello porque la gente de programación no encuentra a un diseñador al que chantajear para que haga el logo, por ahora tendrá el título "Legion of Hell".
-- `DataList.js`, con la lista de datos.
-- `DataCard`, con la tarjeta de datos de cada usuario hackeado.
-- `Footer.js`, con el texto "LOH()" y un pequeño reloj con la hora local del usuario, que tirará del estado de su propio componente, no de `App.js`.
+1. `Page.js`, que se cargará desde `App.js` y mostrará nuestra página principal.
+1. `Header.js`, que en un futuro contendrá nuestro logo pero nadie está muy seguro de ello porque la gente de programación no encuentra a un diseñador al que chantajear para que haga el logo, por ahora tendrá el título "Legion of Hell".
+1. `DataList.js`, con la lista de datos.
+1. `DataCard`, con la tarjeta de datos de cada usuario hackeado.
+1. `Footer.js`, con el texto "LOH()" y un pequeño reloj con la hora local del usuario, que tirará del estado de su propio componente, no de `App.js`.
 
 ## Fase 3
 
-Parece que la api se le está atragantando al equipo de back porque hay personajes importantes y las autoridades están intentando localizar el origen del problema (vosotros).
+Parece que la api se le está atragantando al equipo de back porque en los registros hay personajes importantes y las autoridades están intentando localizar el origen del problema (vosotros).
 
-Os piden que vayáis avanzado y creéis un componente `Filters.js` con un filtro por el email, de manera que cualquiera pueda consultar si su email ha sido comprometido.
+Os piden que vayáis avanzado con los datos del mock y creéis un componente `Filters.js` con un filtro por el email, de manera que cualquiera pueda consultar si su email ha sido comprometido.
 
-La UX Lead Engineer no quiere que se filtre con un botón, sino que conforme escriba el usuario se vayan filtrando los datos.
+> Este es un buen momento para añadir un id único a cada registro ;)
+
+La UX Lead Engineer no quiere que se filtre con un botón, sino que tal como el usuario escriba en el campo se vayan filtrando los datos.
 
 ## Fase 4
 
